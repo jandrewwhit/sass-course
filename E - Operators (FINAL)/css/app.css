@@ -1,0 +1,90 @@
+/* PLUGINS */
+/* BASE STYLES */
+body {
+  font-family: Monaco, monospace;
+  font-size: 14px;
+  background: #c69; }
+
+h1 {
+  font-size: 56px;
+  margin: 0;
+  text-align: center; }
+
+.clearfix::after, .container::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* LAYOUTS */
+.container {
+  position: relative;
+  width: 960px;
+  margin: 40px auto;
+  padding: 40px;
+  box-sizing: border-box;
+  background: white;
+  position: relative; }
+  .container::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 10px;
+    left: -10px;
+    background: #bf4080;
+    box-shadow: -10px 10px 0 #c6538c; }
+
+article.main-content {
+  width: 480px;
+  float: left;
+  margin: 0 30px 0 0; }
+
+aside.main-sidebar {
+  width: 320px;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 0;
+  position: relative; }
+  aside.main-sidebar::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 10px;
+    left: -10px;
+    background: #ffbf00;
+    box-shadow: -10px 10px 0 #ffc61a; }
+
+/* MODULES */
+.alert, .success, .warning, .error {
+  border: solid 1px #333;
+  margin: 10px 0;
+  padding: 15px;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.success {
+  background: #4CAF50; }
+
+.warning {
+  background: #fc3; }
+
+.error {
+  background: orangered; }
+
+.widgets {
+  clear: both; }
+  .widgets .widget {
+    width: 31.25%;
+    float: left;
+    padding: 15px;
+    margin-right: 15px;
+    box-sizing: border-box;
+    border: solid 1px #aaa; }
+
+/*# sourceMappingURL=app.css.map */

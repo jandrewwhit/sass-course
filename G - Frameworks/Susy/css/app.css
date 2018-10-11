@@ -1,0 +1,76 @@
+/* PLUGINS */
+/* BASE STYLES */
+body {
+  font-family: Monaco, monospace;
+  font-size: 14px;
+  background: #c69; }
+
+h1 {
+  font-size: 56px;
+  margin: 0;
+  text-align: center; }
+
+.clearfix::after, .container::after, section::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+footer {
+  text-align: center;
+  color: #df9fbf; }
+
+/* LAYOUTS */
+.container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: white;
+  position: relative;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 10px;
+    left: -10px;
+    background: #bf4080;
+    box-shadow: -10px 10px 0 #c6538c; }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+section {
+  margin: 0 0 30px; }
+
+.about {
+  width: 66.1016949153%;
+  float: left;
+  margin-right: 1.6949152542%; }
+
+.widget {
+  background: #fc3;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 32.2033898305%;
+  float: right;
+  margin-right: 0; }
+
+article {
+  background: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  width: 32.2033898305%;
+  float: left;
+  margin-right: 1.6949152542%; }
+  article:last-child {
+    float: right;
+    margin-right: 0; }
+
+/* MODULES */

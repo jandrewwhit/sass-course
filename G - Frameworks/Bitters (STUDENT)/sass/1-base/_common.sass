@@ -1,0 +1,41 @@
+// COMMON
+
+body
+  font-size: $base-size
+  background: $pink
+
+.brand
+  +hide-text
+  +retina-image("../img/bitters-logo", 250px 88px)
+  background: center no-repeat
+  height: 88px
+  margin: 30px auto
+
+header
+  h2
+    font-size: $base-size * 1.8
+    font-weight: normal
+    text-align: center
+
+  h3
+    padding: 10px 0
+    font-size: $base-size * 1.4
+    text-transform: uppercase
+    text-align: left
+
+article, aside, div, li
+  background: transparentize($teal, 0.8)
+  padding: 15px
+  margin-top: 15px
+  margin-bottom: 15px
+
+ul
+  padding: 0
+
+li
+  list-style: none
+
+footer
+  margin-top: 30px
+  text-align: center
+  color: lighten($pink, 15%)

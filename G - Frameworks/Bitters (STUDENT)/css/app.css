@@ -1,0 +1,83 @@
+/* PLUGINS */
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* BASE STYLES */
+body {
+  font-size: 14px;
+  background: #c69; }
+
+.brand {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  background-image: url("../img/bitters-logo.png");
+  background: center no-repeat;
+  height: 88px;
+  margin: 30px auto; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    .brand {
+      background-image: url("../img/bitters-logo_2x.png");
+      background-size: 250px 88px; } }
+
+header h2 {
+  font-size: 25.2px;
+  font-weight: normal;
+  text-align: center; }
+header h3 {
+  padding: 10px 0;
+  font-size: 19.6px;
+  text-transform: uppercase;
+  text-align: left; }
+
+article, aside, div, li {
+  background: rgba(102, 153, 153, 0.2);
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #df9fbf; }
+
+/* LAYOUTS */
+header {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background: white;
+  margin-top: 30px;
+  position: relative; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .wrapper::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 10px;
+    left: -10px;
+    background: #bf4080;
+    box-shadow: -10px 10px 0 #c6538c; }
+
+/* MODULES */
+
+/*# sourceMappingURL=app.css.map */

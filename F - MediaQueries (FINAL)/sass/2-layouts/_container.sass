@@ -1,0 +1,22 @@
+// CONTAINER
+
+.container
+  position: relative
+  width: $content-width
+  margin: ($gutter * 2) auto
+  padding: $gutter
+  box-sizing: border-box
+  background: white
+  @extend .clearfix
+
+  +cascade($pink)
+
+  +desktop
+    width: $desktop
+
+  +tablet
+    width: $tablet
+
+  +mobile
+    width: 90%
+    margin: 10px auto

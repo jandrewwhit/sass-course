@@ -1,0 +1,28 @@
+// COMMON
+
+body
+  font-family: $stack-mono
+  font-size: $base-size
+  background: $pink
+
+h1
+  font-size: $base-size * 4
+  margin: 0
+  text-align: center
+
+  // responsive states
+  +tablet
+    font-size: $base-size * 3
+
+  +mobile
+    font-size: $base-size * 2
+
+.clearfix
+  &::after
+    content: ""
+    display: table
+    clear: both
+
+footer
+  text-align: center
+  color: lighten($pink, 15%)

@@ -1,0 +1,38 @@
+// CONTAINER
+
+.container
+  margin-top: 40px
+  margin-bottom: 40px
+  padding: $gutter
+  box-sizing: border-box
+  background: white
+  @extend .clearfix
+
+  +cascade($pink)
+
+  @include container(960px)
+
+
+section
+  @extend .clearfix
+  margin: 0 0 $gutter
+
+.about
+  @include span(8 of 12)
+
+.widget
+  background: $warning
+  padding: 20px
+  box-sizing: border-box
+  @include span(4 of 12 last)
+
+article
+  background: #333
+  padding: 20px
+  box-sizing: border-box
+  color: white
+
+  @include span(4 of 12)
+
+  &:last-child
+    @include last
