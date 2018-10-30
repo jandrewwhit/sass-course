@@ -2,8 +2,11 @@
 
 .container
   position: relative
-  width: 80%
+  width: $content-width
   margin: 40px auto 0
   padding: 40px
   box-sizing: border-box
-  background: white
+  background: white  
+  @extend .clearfix
+  
+  +cascade($pink)
